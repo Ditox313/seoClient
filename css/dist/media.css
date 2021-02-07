@@ -1,0 +1,31 @@
+@media screen and (max-width: 1440px)
+{
+    header
+    {
+        background-position-x: 107% !important;
+    }
+}
+
+@media screen and (max-width: 1370px)
+{
+    header
+    {
+        background-position-x: 115% !important;
+    }
+}
+
+@media screen and (max-width: 1300px)
+{
+    header
+    {
+        background-position-x: 128% !important;
+    }
+}
+
+@media screen and (max-width: 1224px)
+{
+    header
+    {
+        background-position-x: 137% !important;
+    }
+}
