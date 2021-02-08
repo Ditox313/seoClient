@@ -1,31 +1,39 @@
-@media screen and (max-width: 1440px)
+
+@media screen and (max-width: 1255px)
 {
-    header
+    header .header_topline__item .header_logo
     {
-        background-position-x: 107% !important;
+        font-size: 15px;
     }
 }
 
-@media screen and (max-width: 1370px)
+@media screen and (max-width: 1210px)
 {
-    header
+    header .header_topline__item .header_logo
     {
-        background-position-x: 115% !important;
+        font-size: 14px;
     }
 }
 
-@media screen and (max-width: 1300px)
+
+@media screen and (max-width: 1199px)
 {
-    header
+    header .header_topline__item .header_logo
     {
-        background-position-x: 128% !important;
+        font-size: 16px;
     }
 }
 
-@media screen and (max-width: 1224px)
+
+@media screen and (max-width: 1115px)
 {
-    header
-    {
-        background-position-x: 137% !important;
-    }
+    header .top_line__mob
+	{
+		display: block;
+	}
+
+    header .top_line__desc
+	{
+		display: none;
+	}
 }
