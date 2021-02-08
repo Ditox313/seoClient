@@ -75,6 +75,12 @@ body {
 .jcsa {
   justify-content: space-around;
 }
+.aafs {
+  align-items: flex-start;
+}
+.jcc {
+  justify-content: center;
+}
 ul {
   padding-left: 0;
 }
@@ -89,6 +95,10 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
 }
 /*------------------------------------------------------------------------*/
 header {
@@ -137,8 +147,35 @@ header .header_topline__item .topline_contacts p {
 header .top_line__mob {
   display: none;
 }
-header .top_line__mob .top_line__mob___item {
-  border: 1px solid red;
+header .top_line__mob .top_line__mob___item .mobile_btn_topline {
+  border: 2px solid #FDF311;
+  display: inline-block;
+  color: #000;
+  font-family: 'Arial', sans-serif;
+  transition: all 0.3s;
+}
+header .top_line__mob .top_line__mob___item .mobile_toggle {
+  font-size: 35px;
+  color: #00A78E;
+  cursor: pointer;
+}
+header .top_line__mob .top_line__mob___item .mobile_btn_topline {
+  padding: 9px 20px;
+  border-radius: 5px;
+  margin-left: 15%;
+}
+header .top_line__mob .top_line__mob___item .mobile_btn_topline:hover {
+  border: 2px solid #00A78E;
+}
+header .top_line__mob .top_line__mob___item .topline_contacts p {
+  margin-top: 0;
+  color: #fff;
+}
+header .top_line__mob .top_line__mob___item .topline_contacts a {
+  margin-right: 10px;
+}
+header .top_line__mob .top_line__mob___item .topline_contacts a:last-child {
+  margin-right: 0;
 }
 header .top_line__desc {
   display: block;

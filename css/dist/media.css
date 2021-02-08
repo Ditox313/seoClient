@@ -62,4 +62,72 @@
 	{
 		display: none;
 	}
+
+    header
+    {
+        background-position: 70px !important;
+        padding-bottom: 30px;
+    }
+
+    header .header_content h1 {
+        font-size: 38px;
+    }
+
+    header .header_content .header_content__item___img .header_persone
+    {
+        position: absolute !important;
+        bottom: -35px !important;
+    }
+
+    header .header_content {
+        margin-top: 50px;
+    }
+    
+    
+}
+
+
+@media screen and (max-width: 1020px)
+{
+
+    header .header_content h1 {
+        font-size: 37px;
+    }
+}
+
+
+@media screen and (max-width: 998px)
+{
+    header .header_content h1 {
+        font-size: 33px;
+    }
+
+    header .header_content ul li
+    {
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 890px)
+{
+    header .header_content h1 {
+        font-size: 30px;
+    }
+
+    header .header_content ul li
+    {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 815px)
+{
+    header .header_content h1 {
+        font-size: 28px;
+    }
+
+    header .header_content ul li
+    {
+        font-size: 19px;
+    }
 }
