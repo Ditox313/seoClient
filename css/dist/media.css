@@ -71,6 +71,7 @@
 
     header .header_content h1 {
         font-size: 38px;
+        line-height: 40px;
     }
 
     header .header_content .header_content__item___img .header_persone
@@ -129,5 +130,25 @@
     header .header_content ul li
     {
         font-size: 19px;
+    }
+
+    header {
+        background-position: 62px -31px !important;
+        padding-bottom: 30px;
+    }
+
+    header .header_content .header_content__item___img .header_persone {
+        bottom: 0px !important;
+    }
+
+    header .top_line__mob .top_line__mob___item .topline_contacts a {
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    header .header_content .header_content__item___img .header_persone {
+        bottom: 17px !important;
+        transform: scale(1.1);
+        left: -30px;
     }
 }
