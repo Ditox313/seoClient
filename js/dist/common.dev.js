@@ -72,4 +72,7 @@ closemenu.forEach(function (item) {
   item.addEventListener('click', function () {
     mobileMenu.style.transform = 'translateY(-101%)';
   });
-});
+}); // delete br
+
+var brs = document.querySelectorAll('.block_1 br');
+console.log(brs);

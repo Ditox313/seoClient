@@ -96,3 +96,9 @@ closemenu.forEach(function(item){
 		mobileMenu.style.transform = 'translateY(-101%)';
 	});
 });
+
+
+// delete br
+
+const brs = document.querySelectorAll('.block_1 br');
+console.log(brs);

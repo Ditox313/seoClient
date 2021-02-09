@@ -48,6 +48,12 @@
     {
         font-size: 40px;
     }
+
+    .block_1 .block_1__content .position_img_block_1 {
+        position: absolute;
+        right: 0;
+        top: -30px;
+    }
 }
 
 
@@ -107,6 +113,11 @@
     {
         font-size: 21px;
     }
+
+    .block_1__content___item > .row > .aife
+    {
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 890px)
@@ -153,6 +164,54 @@
     }
 }
 
+@media screen and (max-width: 768px)
+{
+    .block_1 h2
+    {
+        font-size: 28px;
+    }
+
+    .block_1 h3
+    {
+        font-size: 16px;
+    }
+
+    .block_1 .block_1__content .block_1__content___item .block_1__content___item____title h3
+    {
+        font-size: 20px;
+    }
+
+    .block_1 .block_1__content .block_1__content___item p
+    {
+        font-size: 14px;
+    }
+
+    .block_1 br
+    {
+        display: none !important;
+    }
+
+    .block_1_img_1_mod
+    {
+        display: none;
+    }
+
+    .block_1_img_2_mod
+    {
+        position: absolute;
+        right: 30px;
+    }
+
+    .position_img_block_1
+    {
+        top: -105px !important;
+    }
+
+    .block_1
+    {
+        padding-top: 50px;
+    }
+}
 
 @media screen and (max-width: 762px)
 {
@@ -178,6 +237,21 @@
     }
 }
 
+@media screen and (max-width: 576px)
+{
+    .block_1 .block_1__content .block_1__content___item .block_1__content___item____title h3
+    {
+        width: 70%;
+    }
+
+    .block_1_img_2_mod
+    {
+        position: absolute;
+        right: 0px;
+        top: -30px;
+    }
+}
+
 @media screen and (max-width: 448px)
 {
     header.header_modile h1 {
@@ -196,6 +270,28 @@
     header.header_modile .mob_header_but .btn {
         font-size: 16px;
         padding: 15px 15px;
+    }
+
+    .position_img_block_1
+    {
+        display: none;
+    }
+
+    .position_img_block_1_mod
+    {
+        display: block !important;
+        position: absolute;
+        right: 0;
+        top: -50px;
+    }
+
+    .block_1 .block_1__title h2 {
+        font-size: 28px;
+        line-height: 24px;
+    }
+
+    .block_1 .block_1__title h3 {
+        font-size: 16px;
     }
 }
 
@@ -217,6 +313,19 @@
 
     header.header_modile .mob_header_but .btn {
         font-size: 14px;
+    }
+
+    .block_1 .block_1__title h2 {
+        font-size: 25px;
+        line-height: 24px;
+    }
+
+    .block_1 .block_1__title h3 {
+        font-size: 14px;
+    }
+
+    .block_1 .block_1__content .block_1__content___item .block_1__content___item____title h3 {
+        width: 73%;
     }
 }
 
