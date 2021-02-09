@@ -76,3 +76,23 @@ $(".link").on("click",function(e)
 $(document).ready(function() {
   new WOW().init();
 });
+
+
+// Project code
+
+// mobile menu
+const mobileMenu = document.querySelector('.mobile_menu');
+const openmenu = document.querySelectorAll('[data-openmenu]');
+const closemenu = document.querySelectorAll('[data-closemenu]');
+
+openmenu.forEach(function(item){
+	item.addEventListener('click', function(){
+		mobileMenu.style.transform = 'translateY(0)';
+	});
+});
+
+closemenu.forEach(function(item){
+	item.addEventListener('click', function(){
+		mobileMenu.style.transform = 'translateY(-101%)';
+	});
+});

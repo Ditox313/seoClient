@@ -21,6 +21,7 @@ a {
 body {
   margin: 0;
   padding: 0;
+  position: relative;
 }
 .btn {
   border-radius: 5px;
@@ -268,4 +269,40 @@ header.header_modile .mob_header_but .btn {
   text-align: center;
   font-weight: bold;
   font-size: 19px;
+}
+.mobile_menu {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  top: 0;
+  transform: translateY(-101%);
+  transition: all 0.3s;
+}
+.mobile_menu .mobile_menu__content {
+  position: relative;
+  padding-top: 30px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+}
+.mobile_menu .mobile_menu__content .close_menu__mobile {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.mobile_menu .mobile_menu__content nav ul li {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 400;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+.mobile_menu .mobile_menu__content nav ul li:last-child {
+  margin-bottom: 0;
+}
+.mobile_menu .mobile_menu__content .mobile_menu__soc span a {
+  display: inline-block;
+  padding: 5px;
 }
