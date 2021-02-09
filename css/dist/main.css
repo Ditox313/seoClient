@@ -205,3 +205,67 @@ header .header_content .header_content__item___img .header_persone {
   position: relative;
   bottom: 30px;
 }
+header.header_modile {
+  display: none;
+  background: #00A78E;
+  border-bottom: 2px solid #00BDA2;
+  height: auto;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  border-bottom: 10px solid #FDF311;
+}
+header.header_modile .mob_topline {
+  position: relative;
+}
+header.header_modile .mob_topline .mob_toggle svg {
+  cursor: pointer;
+}
+header.header_modile .mob_topline .logo {
+  margin-left: 13px;
+}
+header.header_modile .mob_topline .logo span {
+  color: #fff;
+  margin-left: 3px;
+}
+header.header_modile .mob_topline .mob_contact a {
+  padding: 5px;
+}
+header.header_modile .mob_topline::before {
+  content: '';
+  width: 110%;
+  height: 2px;
+  background-color: #00BDA2;
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+}
+header.header_modile h1 {
+  margin-top: 33px;
+  text-align: center;
+  font-size: 42px;
+  color: #fff;
+}
+header.header_modile .mob_header_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header.header_modile .mob_header_list ul {
+  margin-top: 30px;
+  color: #fff;
+}
+header.header_modile .mob_header_list ul li {
+  font-size: 26px;
+  line-height: 32px;
+  margin-bottom: 15px;
+}
+header.header_modile .mob_header_but {
+  text-align: center;
+}
+header.header_modile .mob_header_but .btn {
+  display: inline-block;
+  padding: 15px 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 19px;
+}
