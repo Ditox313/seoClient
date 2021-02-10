@@ -102,3 +102,37 @@ closemenu.forEach(function(item){
 
 const brs = document.querySelectorAll('.block_1 br');
 console.log(brs);
+
+
+// slick keys
+$('.slider_keys').slick({
+	slidesToShow: 3,
+	slidesToScroll: 1,
+	// autoplay: true,
+	autoplaySpeed: 2000,
+	arrows: true,
+	dots: true,
+	prevArrow: `<div class="keys_prev slick-prev">
+	<svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path
+			d="M18 6.52686H3.74194L8.91593 1.37602L7.53372 0L0 7.5L7.53372 15L8.91593 13.624L3.74194 8.47314H18V6.52686Z"
+			fill="#FDF311" />
+	</svg>
+	</div>`,
+	nextArrow: `<div class="keys_prev slick-next">
+	<svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M0 6.52686H14.2581L9.08407 1.37602L10.4663 0L18 7.5L10.4663 15L9.08407 13.624L14.2581 8.47314H0V6.52686Z" fill="#FDF311"/>
+	</svg>
+
+	</div>`,
+	responsive: [
+		{
+		  breakpoint: 1200,
+		  settings: {
+			slidesToShow: 2,
+			slidesToScroll: 1,
+		  }
+		},
+		
+	  ]
+  });

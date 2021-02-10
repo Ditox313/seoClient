@@ -34,6 +34,8 @@
 	<link rel="stylesheet" href="libs/bootstrap/grid.css" />
 	<link rel="stylesheet" href="libs/animate/animate.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="libs/slick/slick.css" />
+	<link rel="stylesheet" href="libs/slick/slick-theme.css" />
 	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
 	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox-buttons.css" />
 	<link rel="stylesheet" href="css/dist/main.css" />
@@ -613,7 +615,9 @@
 								отдела SEO продвижения за 1 год. На данный момент мой стаж в SEO более 5 лет. От работы
 								в офисе чувствую перегорание, поэтому выбрал для себя фриланс. Работаю с гигантами рынка
 								и небольшими проектами. Поднимаю с колен свой онлайн сервис по автоматизации работы с
-								репутацией - <span class="lgreen__block_3">Goodvice.io <img src="img/block_3_arrow_1.svg" class="block_3_arrow_position" alt="Изображение"></span>, который прошел в финал сколковского акселератора.
+								репутацией - <span class="lgreen__block_3">Goodvice.io <img
+										src="img/block_3_arrow_1.svg" class="block_3_arrow_position"
+										alt="Изображение"></span>, который прошел в финал сколковского акселератора.
 							</div>
 
 							<div class="df">
@@ -631,10 +635,13 @@
 							</div>
 
 							<div class="df aic">
-								<svg width="45" height="45" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M24.9884 13.6615C25.0523 14.4491 24.8522 15.1431 24.4107 15.6684C23.8642 16.3191 23.0112 16.6156 22.4505 16.6156H20.2837C18.6579 16.6156 17.0318 16.6156 15.406 16.6171C15.7179 17.7743 15.9622 19.8772 15.4816 22.5885C15.2222 24.0536 14.3896 25 13.3604 25C13.3577 25 13.3304 24.9996 13.328 24.9996C12.417 24.9823 11.6044 24.2161 11.516 23.2911C11.4427 22.5197 11.2665 21.3998 11.0976 20.6287C10.6139 18.4246 8.14762 15.5439 6.39193 14.258C6.25788 14.8089 5.79668 15.2157 5.2498 15.2157H1.18117C0.529954 15.2157 0 14.6384 0 13.9291V1.44394C0 0.7342 0.529954 0.157303 1.18117 0.157303H5.2498C5.71204 0.157303 6.11313 0.448198 6.30694 0.870428C7.38723 0.285629 8.60571 1.90735e-06 10.0121 1.90735e-06C10.0864 1.90735e-06 10.1614 0.00075531 10.2363 0.00263596C10.9891 0.0184422 12.2701 0.0259666 14.153 0.0259666C15.4122 0.0259666 16.7267 0.0225811 17.8267 0.0195694C18.9706 0.0165596 19.8823 0.0143013 20.2578 0.0169353C21.392 0.0248375 22.2823 0.687534 22.7006 1.83343C23.0361 2.7524 22.7811 3.48547 22.3945 3.9871C22.9273 4.18504 23.5318 4.62233 23.7557 5.58119C23.9689 6.4915 23.6769 7.17829 23.2793 7.6389C23.8393 7.84964 24.3033 8.25418 24.5088 9.0866C24.74 10.0274 24.428 10.8959 23.6642 11.5297C24.2408 11.8458 24.8909 12.4641 24.9884 13.6615ZM5.64398 1.44394C5.64398 1.20723 5.4671 1.01493 5.25014 1.01493H1.18151C0.964558 1.01493 0.787677 1.20723 0.787677 1.44394V13.9298C0.787677 14.1662 0.964213 14.3588 1.18151 14.3588H5.25014C5.4671 14.3588 5.64398 14.1665 5.64398 13.9298V1.44394ZM24.2041 13.7371C24.0818 12.2371 22.6754 12.067 22.6613 12.0663C22.482 12.0475 22.3379 11.8985 22.3103 11.7047C22.2833 11.5108 22.3793 11.3216 22.5452 11.2448C23.1083 10.9829 24.0131 10.3838 23.7485 9.30863C23.5857 8.64856 23.2258 8.40019 22.2674 8.28617C22.0874 8.26509 21.944 8.11306 21.9202 7.91738C21.896 7.72169 21.9973 7.53353 22.1658 7.46128C22.2108 7.44209 23.2682 6.97056 22.9932 5.7923C22.7531 4.76307 21.8014 4.68103 21.4891 4.68103H21.4873C21.3008 4.6927 21.1332 4.55685 21.0862 4.35966C21.0399 4.16246 21.1267 3.95662 21.2949 3.86705C21.3395 3.84335 22.3804 3.27435 21.9696 2.14991C21.5675 1.04767 20.7218 0.876823 20.2533 0.873438C19.8788 0.870802 18.9692 0.873058 17.8291 0.876446C16.7285 0.87908 15.4129 0.882843 14.1537 0.882843C12.266 0.882843 10.9795 0.874945 10.2218 0.859138C8.75599 0.831291 7.50884 1.12934 6.43131 1.77284V13.2731C8.29893 14.4721 11.2814 17.7739 11.8635 20.43C12.0394 21.2327 12.2225 22.3989 12.2992 23.2027C12.3461 23.6934 12.8329 24.1322 13.3601 24.1424C13.9944 24.1424 14.5237 23.4684 14.7085 22.4256C15.2536 19.3503 14.8263 17.1707 14.4874 16.3676C14.4314 16.2348 14.4411 16.0801 14.514 15.9574C14.5862 15.8344 14.7106 15.7602 14.8449 15.7599C16.6573 15.758 18.4707 15.758 20.2837 15.758H22.4502C22.7663 15.758 23.4203 15.5762 23.8296 15.0896C24.1229 14.7415 24.2487 14.2862 24.2041 13.7371ZM3.26506 5.48523C2.3423 5.48523 1.59159 4.66748 1.59159 3.66234C1.59159 2.65681 2.34196 1.83945 3.26506 1.83945C4.18816 1.83945 4.93853 2.65681 4.93853 3.66234C4.93853 4.66748 4.18781 5.48523 3.26506 5.48523ZM3.26506 2.69745C2.77656 2.69745 2.37927 3.13022 2.37927 3.66234C2.37927 4.19407 2.77656 4.62722 3.26506 4.62722C3.7539 4.62722 4.15085 4.19407 4.15085 3.66234C4.15085 3.1306 3.7539 2.69745 3.26506 2.69745Z" fill="#00A78E"/>
-									</svg>
-									
+								<svg width="45" height="45" viewBox="0 0 25 25" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M24.9884 13.6615C25.0523 14.4491 24.8522 15.1431 24.4107 15.6684C23.8642 16.3191 23.0112 16.6156 22.4505 16.6156H20.2837C18.6579 16.6156 17.0318 16.6156 15.406 16.6171C15.7179 17.7743 15.9622 19.8772 15.4816 22.5885C15.2222 24.0536 14.3896 25 13.3604 25C13.3577 25 13.3304 24.9996 13.328 24.9996C12.417 24.9823 11.6044 24.2161 11.516 23.2911C11.4427 22.5197 11.2665 21.3998 11.0976 20.6287C10.6139 18.4246 8.14762 15.5439 6.39193 14.258C6.25788 14.8089 5.79668 15.2157 5.2498 15.2157H1.18117C0.529954 15.2157 0 14.6384 0 13.9291V1.44394C0 0.7342 0.529954 0.157303 1.18117 0.157303H5.2498C5.71204 0.157303 6.11313 0.448198 6.30694 0.870428C7.38723 0.285629 8.60571 1.90735e-06 10.0121 1.90735e-06C10.0864 1.90735e-06 10.1614 0.00075531 10.2363 0.00263596C10.9891 0.0184422 12.2701 0.0259666 14.153 0.0259666C15.4122 0.0259666 16.7267 0.0225811 17.8267 0.0195694C18.9706 0.0165596 19.8823 0.0143013 20.2578 0.0169353C21.392 0.0248375 22.2823 0.687534 22.7006 1.83343C23.0361 2.7524 22.7811 3.48547 22.3945 3.9871C22.9273 4.18504 23.5318 4.62233 23.7557 5.58119C23.9689 6.4915 23.6769 7.17829 23.2793 7.6389C23.8393 7.84964 24.3033 8.25418 24.5088 9.0866C24.74 10.0274 24.428 10.8959 23.6642 11.5297C24.2408 11.8458 24.8909 12.4641 24.9884 13.6615ZM5.64398 1.44394C5.64398 1.20723 5.4671 1.01493 5.25014 1.01493H1.18151C0.964558 1.01493 0.787677 1.20723 0.787677 1.44394V13.9298C0.787677 14.1662 0.964213 14.3588 1.18151 14.3588H5.25014C5.4671 14.3588 5.64398 14.1665 5.64398 13.9298V1.44394ZM24.2041 13.7371C24.0818 12.2371 22.6754 12.067 22.6613 12.0663C22.482 12.0475 22.3379 11.8985 22.3103 11.7047C22.2833 11.5108 22.3793 11.3216 22.5452 11.2448C23.1083 10.9829 24.0131 10.3838 23.7485 9.30863C23.5857 8.64856 23.2258 8.40019 22.2674 8.28617C22.0874 8.26509 21.944 8.11306 21.9202 7.91738C21.896 7.72169 21.9973 7.53353 22.1658 7.46128C22.2108 7.44209 23.2682 6.97056 22.9932 5.7923C22.7531 4.76307 21.8014 4.68103 21.4891 4.68103H21.4873C21.3008 4.6927 21.1332 4.55685 21.0862 4.35966C21.0399 4.16246 21.1267 3.95662 21.2949 3.86705C21.3395 3.84335 22.3804 3.27435 21.9696 2.14991C21.5675 1.04767 20.7218 0.876823 20.2533 0.873438C19.8788 0.870802 18.9692 0.873058 17.8291 0.876446C16.7285 0.87908 15.4129 0.882843 14.1537 0.882843C12.266 0.882843 10.9795 0.874945 10.2218 0.859138C8.75599 0.831291 7.50884 1.12934 6.43131 1.77284V13.2731C8.29893 14.4721 11.2814 17.7739 11.8635 20.43C12.0394 21.2327 12.2225 22.3989 12.2992 23.2027C12.3461 23.6934 12.8329 24.1322 13.3601 24.1424C13.9944 24.1424 14.5237 23.4684 14.7085 22.4256C15.2536 19.3503 14.8263 17.1707 14.4874 16.3676C14.4314 16.2348 14.4411 16.0801 14.514 15.9574C14.5862 15.8344 14.7106 15.7602 14.8449 15.7599C16.6573 15.758 18.4707 15.758 20.2837 15.758H22.4502C22.7663 15.758 23.4203 15.5762 23.8296 15.0896C24.1229 14.7415 24.2487 14.2862 24.2041 13.7371ZM3.26506 5.48523C2.3423 5.48523 1.59159 4.66748 1.59159 3.66234C1.59159 2.65681 2.34196 1.83945 3.26506 1.83945C4.18816 1.83945 4.93853 2.65681 4.93853 3.66234C4.93853 4.66748 4.18781 5.48523 3.26506 5.48523ZM3.26506 2.69745C2.77656 2.69745 2.37927 3.13022 2.37927 3.66234C2.37927 4.19407 2.77656 4.62722 3.26506 4.62722C3.7539 4.62722 4.15085 4.19407 4.15085 3.66234C4.15085 3.1306 3.7539 2.69745 3.26506 2.69745Z"
+										fill="#00A78E" />
+								</svg>
+
 
 
 								<span>
@@ -649,8 +656,8 @@
 					<div class="col-lg-6 col-md-6 col-sm-12">
 						<div class="block_3__list___item block_3__list___item____img">
 							<img src="img/block_3_img_1.png" class="block_3_img_desc" alt="Изображение">
-							<img src="img/block_3_img_plan.svg" class="block_3_img_plan" alt="Изображение">	
-							<img src="img/block_3_img_mob.svg" class="block_3_img_mob" alt="Изображение">	
+							<img src="img/block_3_img_plan.svg" class="block_3_img_plan" alt="Изображение">
+							<img src="img/block_3_img_mob.svg" class="block_3_img_mob" alt="Изображение">
 
 							<span>
 								<img src="img/block_3_arrow_2.svg" class="block_3_arrow_absolute" alt="Изображение">
@@ -662,6 +669,234 @@
 		</div>
 	</section>
 	<!-- end block_3 -->
+
+
+	<!-- block_4 -->
+	<section class="block_4">
+		<div class="wrapper">
+			<div class="block_4__title">
+				<h2>
+					Кейсы
+				</h2>
+			</div>
+
+			<div class="block_4__subtitle">
+				<h3>
+					Вы даже не представляете сколько фейковых портфолио в интернете.
+					Но я не балабол, поэтому все записал на видео!
+				</h3>
+			</div>
+
+			<div class="slider slider_keys df jcsb">
+				
+
+				<div class="slider_item" style="width: 30%;">
+					<div class="slider_item__title slider_item__title___block_4 ">
+						<h3>Курсы английского языка</h3>
+					</div>
+
+					<div class="slider_item__content slider_item__content___block_4">
+						<div class="row">
+							<div class="col-lg-4">
+								<div class="slider_item__content___img">
+									<img src="img/slider_block_4_img.svg" class="img-fluid" alt="Изображение">
+								</div>
+							</div>
+							<div class="col-lg-8 reset-pl0">
+								<div class="slider_item__content___img___info ">
+									<p>Услуга:SEO-продвижение</p>
+									<p>Результат:</p>
+									<p>Срок:</p>
+									<p>Регион:</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="slider_item__btns">
+						<a href="#" class="slider_btn slider_btn__yellow">
+							Видео-разбор
+						</a>
+
+						<a href="#" class="slider_btn slider_btn__transparent">
+							Подробнее
+						</a>
+					</div>
+				</div>
+
+				<div class="slider_item">
+					<div class="slider_item__title slider_item__title___block_4 ">
+						<h3>Высшая школа менеджмента </h3>
+					</div>
+
+					<div class="slider_item__content slider_item__content___block_4">
+						<div class="row">
+							<div class="col-lg-4">
+								<div class="slider_item__content___img">
+									<img src="img/slider_block_4_img.svg" class="img-fluid" alt="Изображение">
+								</div>
+							</div>
+							<div class="col-lg-8 reset-pl0">
+								<div class="slider_item__content___img___info ">
+									<p>Услуга:SEO-продвижение</p>
+									<p>Результат:</p>
+									<p>Срок:</p>
+									<p>Регион:</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="slider_item__btns">
+						<a href="#" class="slider_btn slider_btn__yellow">
+							Видео-разбор
+						</a>
+
+						<a href="#" class="slider_btn slider_btn__transparent">
+							Подробнее
+						</a>
+					</div>
+				</div>
+
+				<div class="slider_item">
+					<div class="slider_item__title slider_item__title___block_4 ">
+						<h3>Школа английского языка</h3>
+					</div>
+
+					<div class="slider_item__content slider_item__content___block_4">
+						<div class="row">
+							<div class="col-lg-4">
+								<div class="slider_item__content___img">
+									<img src="img/slider_block_4_img.svg" class="img-fluid" alt="Изображение">
+								</div>
+							</div>
+							<div class="col-lg-8 reset-pl0">
+								<div class="slider_item__content___img___info ">
+									<p>Услуга:SEO-продвижение</p>
+									<p>Результат:</p>
+									<p>Срок:</p>
+									<p>Регион:</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="slider_item__btns">
+						<a href="#" class="slider_btn slider_btn__yellow">
+							Видео-разбор
+						</a>
+
+						<a href="#" class="slider_btn slider_btn__transparent">
+							Подробнее
+						</a>
+					</div>
+				</div>
+
+				<div class="slider_item">
+					<div class="slider_item__title slider_item__title___block_4 ">
+						<h3>Курсы английского языка</h3>
+					</div>
+
+					<div class="slider_item__content slider_item__content___block_4">
+						<div class="row">
+							<div class="col-lg-4">
+								<div class="slider_item__content___img">
+									<img src="img/slider_block_4_img.svg" class="img-fluid" alt="Изображение">
+								</div>
+							</div>
+							<div class="col-lg-8 reset-pl0">
+								<div class="slider_item__content___img___info ">
+									<p>Услуга:SEO-продвижение</p>
+									<p>Результат:</p>
+									<p>Срок:</p>
+									<p>Регион:</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="slider_item__btns">
+						<a href="#" class="slider_btn slider_btn__yellow">
+							Видео-разбор
+						</a>
+
+						<a href="#" class="slider_btn slider_btn__transparent">
+							Подробнее
+						</a>
+					</div>
+				</div>
+
+				<div class="slider_item">
+					<div class="slider_item__title slider_item__title___block_4 ">
+						<h3>Высшая школа менеджмента </h3>
+					</div>
+
+					<div class="slider_item__content slider_item__content___block_4">
+						<div class="row">
+							<div class="col-lg-4">
+								<div class="slider_item__content___img">
+									<img src="img/slider_block_4_img.svg" class="img-fluid" alt="Изображение">
+								</div>
+							</div>
+							<div class="col-lg-8 reset-pl0">
+								<div class="slider_item__content___img___info ">
+									<p>Услуга:SEO-продвижение</p>
+									<p>Результат:</p>
+									<p>Срок:</p>
+									<p>Регион:</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="slider_item__btns">
+						<a href="#" class="slider_btn slider_btn__yellow">
+							Видео-разбор
+						</a>
+
+						<a href="#" class="slider_btn slider_btn__transparent">
+							Подробнее
+						</a>
+					</div>
+				</div>
+
+				<div class="slider_item">
+					<div class="slider_item__title slider_item__title___block_4 ">
+						<h3>Школа английского языка</h3>
+					</div>
+
+					<div class="slider_item__content slider_item__content___block_4">
+						<div class="row">
+							<div class="col-lg-4">
+								<div class="slider_item__content___img">
+									<img src="img/slider_block_4_img.svg" class="img-fluid" alt="Изображение">
+								</div>
+							</div>
+							<div class="col-lg-8 reset-pl0">
+								<div class="slider_item__content___img___info ">
+									<p>Услуга:SEO-продвижение</p>
+									<p>Результат:</p>
+									<p>Срок:</p>
+									<p>Регион:</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="slider_item__btns">
+						<a href="#" class="slider_btn slider_btn__yellow">
+							Видео-разбор
+						</a>
+
+						<a href="#" class="slider_btn slider_btn__transparent">
+							Подробнее
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end block_4 -->
 
 
 
@@ -681,8 +916,10 @@
 	<input type="hidden" name="form_subject" value="Запись на консультацию">
 	<!-- END Hidden Required Fields -->
 
+
 	<script src="libs/jQuery/jquery-3.3.1.min.js"></script>
 	<script src="libs/wow/wow.min.js"></script>
+	<script src="libs/slick/slick.js"></script>
 	<script src="libs/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
 	<script src="libs/fancybox/jquery.fancybox.js"></script>
 	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>

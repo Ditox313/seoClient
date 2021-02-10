@@ -318,15 +318,9 @@
         margin-bottom: 00px;
     }
 
-    .block_3_main_text
-    {
-        margin-top: -20px;
-    }
+    
 
-    .block_3_order
-    {
-        order: 1 !important;
-    }
+    
 
    
 }
@@ -352,6 +346,16 @@
         display: flex;
         justify-content: center;
    
+    }
+
+    .block_3_order
+    {
+        order: 1 !important;
+    }
+
+    .block_3_main_text
+    {
+        margin-top: -20px;
     }
 
     
