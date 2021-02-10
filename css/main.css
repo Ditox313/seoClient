@@ -354,3 +354,20 @@ header.header_modile .mob_header_but .btn {
   top: 50%;
   margin-top: -70.5px;
 }
+.block_2 {
+  font-family: 'Arial', sans-serif;
+  padding-top: 100px;
+}
+.block_2 .block_2__subtitle h3 {
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.block_2 .block_2__list .block_2__list___item {
+  text-align: center;
+  width: 25%;
+}
+.block_2 .block_2__list .block_2__list___item span {
+  display: block;
+  margin-top: 10px;
+}
