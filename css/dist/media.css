@@ -1,4 +1,11 @@
+@media screen and (max-width: 1274px)
+{
 
+    .block_3_arrow_position
+    {
+        display: none;
+    }
+}
 @media screen and (max-width: 1255px)
 {
     header .header_topline__item .header_logo
@@ -10,6 +17,7 @@
     {
         bottom: 0px;
     }
+    
 }
 
 @media screen and (max-width: 1210px)
@@ -89,6 +97,13 @@
     header .header_content {
         margin-top: 50px;
     }
+
+    .block_3 .block_3__list .block_3__list___item____img .block_3_arrow_absolute {
+        position: absolute;
+        bottom: -44px;
+        right: 30%;
+        margin-left: -115px;
+    }
     
     
 }
@@ -117,6 +132,23 @@
     .block_1__content___item > .row > .aife
     {
         align-items: center;
+    }
+
+    .block_3 .block_3__list .block_3__list___item {
+        font-size: 16px;
+    }
+
+    .block_3 .block_3__list .block_3__list___item____img .block_3_img_desc {
+        display: none;
+    }
+
+    .block_3 .block_3__list .block_3__list___item____img .block_3_img_plan {
+        display: block;
+    }
+
+    .block_3_arrow_absolute
+    {
+        display: none;
     }
 }
 
@@ -190,6 +222,14 @@
         font-size: 16px;
     }
 
+    .block_3 h2 {
+        font-size: 28px;
+    }
+
+    .block_3 .block_3__list .block_3__list___item {
+        font-size: 14px;
+    }
+
     
 }
 
@@ -243,6 +283,10 @@
         padding-top: 50px;
     }
 
+    .block_3{
+        padding-top: 50px;
+    }
+
     .block_2 .block_2__list .block_2__list___item
     {
         width: 50%;
@@ -263,6 +307,27 @@
         font-size: 28px;
     }
 
+    
+
+    .block_3 .block_3__list .block_3__list___item____img {
+        position: relative;
+        top: 0px;
+    }
+
+    .block_3 h2 {
+        margin-bottom: 00px;
+    }
+
+    .block_3_main_text
+    {
+        margin-top: -20px;
+    }
+
+    .block_3_order
+    {
+        order: 1 !important;
+    }
+
    
 }
 
@@ -271,6 +336,27 @@
     header .header_content h1 {
         font-size: 26px;
     }
+
+    .block_3 .block_3__list .block_3__list___item____img .block_3_img_plan
+    {
+        display: none;
+    }
+
+    .block_3 .block_3__list .block_3__list___item____img .block_3_img_mob
+    {
+        display: block;
+    }
+
+    .block_3 .block_3__list .block_3__list___item____img
+    {
+        display: flex;
+        justify-content: center;
+   
+    }
+
+    
+
+    
 }
 
 @media screen and (max-width: 740px)
@@ -387,6 +473,10 @@
     }
 
     .block_2 h2 {
+        font-size: 25px;
+    }
+
+    .block_3 h2 {
         font-size: 25px;
     }
 }

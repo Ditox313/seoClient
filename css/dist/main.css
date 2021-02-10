@@ -410,3 +410,12 @@ header.header_modile .mob_header_but .btn {
   right: 50%;
   margin-left: -115px;
 }
+.block_3 .block_3__list .block_3__list___item____img .block_3_img_desc {
+  display: block;
+}
+.block_3 .block_3__list .block_3__list___item____img .block_3_img_plan {
+  display: none;
+}
+.block_3 .block_3__list .block_3__list___item____img .block_3_img_mob {
+  display: none;
+}
