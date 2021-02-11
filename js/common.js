@@ -190,3 +190,56 @@ $('.block_5__more').on('click', function () {
 });
 
 
+// Tabs
+
+const tabs = document.querySelectorAll('.tab'),
+      menu_links = document.querySelectorAll('.block_5__tabmenu ul li'),
+	  menu_parent = document.querySelector('.block_5__tabmenu ul');
+
+	  
+	 // Скрываем все табы
+	 function hideTabs()
+	 {
+		 tabs.forEach(function(item){
+			 item.style.display = 'none';
+		 });
+ 
+		 menu_links.forEach(function(item){
+			 item.classList.remove('tab__active');
+		 });
+	 }
+
+	 // Показываем таб
+	 function showTab(i = 0)
+	 {
+		 tabs[i].style.display = 'block';
+		 tabs[i].classList.add('fade_anim');
+		 menu_links[i].classList.add('tab__active');
+	 }
+
+	 // Делегируем событие на родителя меню
+	 function clickMenu()
+	 {
+		 menu_parent.addEventListener('click', function(e){
+			 const target = e.target;
+	 
+			 if(target && target.classList.contains('tabs_menu_item'))
+			 {
+				 menu_links.forEach(function(item, i){
+					 if(target == item)
+					 {
+						 hideTabs();
+						 showTab(i);
+	 
+						 item.classList.add('tab__active');
+					 }
+				 });
+			 }
+		 });
+	 }
+
+	hideTabs();
+    showTab();
+    clickMenu();
+
+

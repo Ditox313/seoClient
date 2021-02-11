@@ -118,4 +118,46 @@ $('.block_5__more').on('click', function () {
   $('.tab_uslugi_toggle_mob').slideToggle('normal');
   $('.block_5__more span, .block_5__more svg').toggleClass('dn');
   $('.more_2').toggleClass('dn');
-});
+}); // Tabs
+
+var tabs = document.querySelectorAll('.tab'),
+    menu_links = document.querySelectorAll('.block_5__tabmenu ul li'),
+    menu_parent = document.querySelector('.block_5__tabmenu ul'); // Скрываем все табы
+
+function hideTabs() {
+  tabs.forEach(function (item) {
+    item.style.display = 'none';
+  });
+  menu_links.forEach(function (item) {
+    item.classList.remove('tab__active');
+  });
+} // Показываем таб
+
+
+function showTab() {
+  var i = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+  tabs[i].style.display = 'block';
+  tabs[i].classList.add('fade_anim');
+  menu_links[i].classList.add('tab__active');
+} // Делегируем событие на родителя меню
+
+
+function clickMenu() {
+  menu_parent.addEventListener('click', function (e) {
+    var target = e.target;
+
+    if (target && target.classList.contains('tabs_menu_item')) {
+      menu_links.forEach(function (item, i) {
+        if (target == item) {
+          hideTabs();
+          showTab(i);
+          item.classList.add('tab__active');
+        }
+      });
+    }
+  });
+}
+
+hideTabs();
+showTab();
+clickMenu();
