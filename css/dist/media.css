@@ -364,6 +364,17 @@
         font-size: 14px;
     }
 
+    .block_5 .block_5__tabcontent .uslugi_item h4 {
+        margin: 20px 0 15px 0;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .block_5 .block_5__tabcontent .uslugi_item div {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
     
 }
 
@@ -524,6 +535,17 @@
 
     .block_5 .block_5__subtitle h3 {
         width: 90%;
+    }
+
+    .block_5 .block_5__tabcontent .block_5__more
+    {
+        display: block;
+        text-align: center;
+    }
+
+    .tab_uslugi_toggle_mob
+    {
+        display: none;
     }
 
     

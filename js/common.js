@@ -182,3 +182,11 @@ $('.quests_block').on('click', function () {
 	$(this).find('.icon_toggle__plus').toggleClass('dn');
 });
 
+// mobile but tabs 4
+$('.block_5__more').on('click', function () {
+	$('.tab_uslugi_toggle_mob').slideToggle('normal');
+	$('.block_5__more span, .block_5__more svg').toggleClass('dn');
+	$('.more_2').toggleClass('dn');
+});
+
+
