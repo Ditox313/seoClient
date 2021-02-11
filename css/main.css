@@ -134,6 +134,9 @@ p {
   right: -96%;
   transform: scale(0.7);
 }
+.grow {
+  flex-grow: 1;
+}
 /*------------------------------------------------------------------------*/
 header {
   height: 713px;
@@ -509,4 +512,89 @@ header.header_modile .mob_header_but .btn {
 .block_4 .slider_keys .slider_item__btns .slider_btn__transparent:hover {
   transition: all 0.3s;
   border: 2px solid #fff;
+}
+.block_5 {
+  font-family: 'Arial', sans-serif;
+  padding-top: 50px;
+}
+.block_5 .block_5__title {
+  margin-bottom: 20px;
+}
+.block_5 .block_5__subtitle h3 {
+  width: 45%;
+  margin-bottom: 20px;
+}
+.block_5 .block_5__tabmenu ul {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.block_5 .block_5__tabmenu ul li {
+  font-size: 22px;
+  line-height: 30px;
+  cursor: pointer;
+}
+.block_5 .block_5__tabmenu ul li.tab__active {
+  position: relative;
+}
+.block_5 .block_5__tabmenu ul li.tab__active::before {
+  content: '';
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background: #01A48C;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+.block_5 .block_5__tabcontent .block_5__tab___item____title img {
+  margin-bottom: 20px;
+}
+.block_5 .block_5__tabcontent .block_5__tab___item____title h3 {
+  font-size: 20px;
+  line-height: 26px;
+  color: #01A68D;
+  margin-bottom: 20px;
+}
+.block_5 .block_5__tabcontent .block_5__tab___item____content {
+  font-size: 18px;
+}
+.block_5 .block_5__tabcontent .tab_price__img {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.block_5 .block_5__tabcontent table {
+  width: 100%;
+}
+.block_5 .block_5__tabcontent table .thead {
+  margin-bottom: 20px;
+  display: block;
+}
+.block_5 .block_5__tabcontent table th {
+  font-size: 20px;
+  line-height: 26px;
+  color: #01A58D;
+}
+.block_5 .block_5__tabcontent table tr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.block_5 .block_5__tabcontent table td.td_bg {
+  margin-bottom: 20px;
+}
+.block_5 .block_5__tabcontent table td.td_bg span {
+  display: inline-block;
+}
+.block_5 .block_5__tabcontent table td.td_bg div {
+  flex-grow: 1;
+  background: url('../../img/line_bg.png') repeat-x bottom center;
+}
+.block_6 {
+  font-family: 'Arial', sans-serif;
+  padding-top: 100px;
 }
