@@ -230,6 +230,26 @@
     {
         width: 90%;
     }
+
+    .block_5 .block_5__tabmenu ul
+    {
+        display: none;
+    }
+
+    .select__gap
+    {
+        display: block !important;
+    }
+
+    .block_5__tabmenu___list
+    {
+        display: none !important;
+    }
+
+    .block_5__tabcontent 
+    {
+        margin-top: 30px;
+    }
 }
 
 @media screen and (max-width: 890px)
@@ -703,6 +723,11 @@
     .block_2 .block_2__list .block_2__list___item span
     {
         font-size: 14px;
+    }
+
+    .select
+    {
+        width: 300px;
     }
 
 }

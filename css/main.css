@@ -155,6 +155,79 @@ p {
     opacity: 1;
   }
 }
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.select {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 300px;
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.65);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.65);
+  box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.65);
+  border-radius: 5px;
+}
+.select-wrap select {
+  margin: 20px;
+}
+.select__gap {
+  background: transparent;
+  color: #467797;
+  display: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 10px 15px;
+  cursor: pointer;
+  position: relative;
+}
+.on.select__gap,
+.select__gap:hover {
+  color: #467797;
+}
+.select__list {
+  background: transparent;
+  margin: 0px 0;
+}
+.select__list.on {
+  display: block;
+}
+.select__item span {
+  display: block;
+  padding: 10px 15px;
+  cursor: pointer;
+  color: #333;
+}
+.select__item.selected,
+.select__item span:hover {
+  color: #467797;
+}
+.select__gap:after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  margin-top: -7px;
+  background: url('../../img/arrow_select_down.svg') no-repeat center center;
+  -webkit-transition: all 0.27s ease-in-out;
+  -o-transition: all 0.27s ease-in-out;
+  transition: all 0.27s ease-in-out;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.on.select__gap:after {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
 /*------------------------------------------------------------------------*/
 header {
   height: 713px;
@@ -542,20 +615,20 @@ header.header_modile .mob_header_but .btn {
   width: 45%;
   margin-bottom: 20px;
 }
-.block_5 .block_5__tabmenu ul {
+.block_5 .block_5__tabmenu ul.block_5__tabmenu___list {
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
 }
-.block_5 .block_5__tabmenu ul li {
+.block_5 .block_5__tabmenu ul.block_5__tabmenu___list li {
   font-size: 22px;
   line-height: 30px;
   cursor: pointer;
 }
-.block_5 .block_5__tabmenu ul li.tab__active {
+.block_5 .block_5__tabmenu ul.block_5__tabmenu___list li.tab__active {
   position: relative;
 }
-.block_5 .block_5__tabmenu ul li.tab__active::before {
+.block_5 .block_5__tabmenu ul.block_5__tabmenu___list li.tab__active::before {
   content: '';
   width: 100%;
   height: 5px;
@@ -564,6 +637,24 @@ header.header_modile .mob_header_but .btn {
   position: absolute;
   bottom: -5px;
   left: 0;
+}
+.block_5 .block_5__tabmenu select#tabs_menu {
+  font-family: 'Arial', sans-serif;
+  padding: 10px 50px 10px 15px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.4);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.4);
+  box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.4);
+  border: 1px solid #fff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background: url('../../img/arrow_select_down.svg') no-repeat 97% center;
+  outline: 0;
+  cursor: pointer;
 }
 .block_5 .block_5__tabcontent .block_5__tabcontent___img {
   text-align: center;
