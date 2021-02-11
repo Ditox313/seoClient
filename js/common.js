@@ -175,5 +175,10 @@ $('.slider_keys').slick({
 });
 
 
-// Tabs
+// Questions
+
+$('.quests_block').on('click', function () {
+	$(this).children('.quest_answer').slideToggle('normal');
+	$(this).find('.icon_toggle__plus').toggleClass('dn');
+});
 

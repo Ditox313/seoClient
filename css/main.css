@@ -95,6 +95,9 @@ body {
 .aife {
   align-items: flex-end;
 }
+.dn {
+  display: none;
+}
 ul {
   padding-left: 0;
 }
@@ -547,6 +550,9 @@ header.header_modile .mob_header_but .btn {
   bottom: -5px;
   left: 0;
 }
+.block_5 .block_5__tabcontent .block_5__tabcontent___img {
+  text-align: center;
+}
 .block_5 .block_5__tabcontent .block_5__tab___item____title img {
   margin-bottom: 20px;
 }
@@ -593,6 +599,34 @@ header.header_modile .mob_header_but .btn {
 .block_5 .block_5__tabcontent table td.td_bg div {
   flex-grow: 1;
   background: url('../../img/line_bg.png') repeat-x bottom center;
+}
+.block_5 .block_5__tabcontent .block_5__tabcontent___text h4 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.block_5 .block_5__tabcontent .block_5__tabcontent___text .quests .quests_block {
+  position: relative;
+  margin-bottom: 30px;
+}
+.block_5 .block_5__tabcontent .block_5__tabcontent___text .quests .quests_block span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.block_5 .block_5__tabcontent .block_5__tabcontent___text .quests .quests_block .quest_title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.block_5 .block_5__tabcontent .block_5__tabcontent___text .quests .quests_block .quest_title .icon_toggle {
+  cursor: pointer;
+  display: block;
+  padding: 10px;
 }
 .block_6 {
   font-family: 'Arial', sans-serif;

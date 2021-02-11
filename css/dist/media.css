@@ -39,6 +39,12 @@
         width: 62%;
         margin-bottom: 20px;
     }
+
+    .block_5 .block_5__tabcontent .block_5__tabcontent___text .quests .quests_block .quest_title {
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: 700;
+    }
     
 }
 
@@ -60,6 +66,15 @@
     header .header_content .header_content__item___img .header_persone
     {
         bottom: -20px;
+    }
+
+    .block_5 .block_5__tabcontent .block_5__tabcontent___text .quests .quests_block span {
+        position: absolute;
+        right: -50px;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
     }
 }
 
@@ -196,6 +211,24 @@
     .block_5 .block_5__tabcontent table
     {
         font-size: 14px;
+    }
+
+    .block_5 .block_5__tabcontent .block_5__tabcontent___img {
+        display: none;
+    }
+
+    .block_5 .block_5__tabcontent .block_5__tabcontent___text .quests .quests_block span {
+        position: absolute;
+        right: 10px;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+
+    .block_5 .block_5__tabcontent .block_5__tabcontent___text .quests .quests_block .quest_title
+    {
+        width: 90%;
     }
 }
 
@@ -594,6 +627,12 @@
 
     .block_5 .block_5__tabcontent table {
         font-size: 13px;
+    }
+
+    .block_5 .block_5__tabcontent .block_5__tabcontent___text .quests .quests_block .quest_title {
+        margin-bottom: 20px;
+        font-size: 15px;
+        font-weight: 600;
     }
 }
 
