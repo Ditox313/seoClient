@@ -92,5 +92,19 @@ $('.slider_keys').slick({
       slidesToShow: 2,
       slidesToScroll: 1
     }
+  }, {
+    breakpoint: 815,
+    settings: {
+      prevArrow: "<div class=\"keys_prev slick-prev\">\n\t\t\t\t<svg width=\"30\" height=\"30\" viewBox=\"0 0 30 30\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"15\" cy=\"15\" r=\"15\" fill=\"#FDF311\"/>\n<path d=\"M22 14.7864H10.9104L14.9346 11.0091L13.8596 10L8 15.5L13.8596 21L14.9346 19.9909L10.9104 16.2136H22V14.7864Z\" fill=\"black\"/>\n</svg>\n\n\t\t\t\t\n\t</div>",
+      nextArrow: "<div class=\"keys_prev slick-next\">\n\t\t\t\t<svg width=\"30\" height=\"30\" viewBox=\"0 0 30 30\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle r=\"15\" transform=\"matrix(-1 0 0 1 15 15)\" fill=\"#FDF311\"/>\n<path d=\"M8 14.7864H19.0896L15.0654 11.0091L16.1404 10L22 15.5L16.1404 21L15.0654 19.9909L19.0896 16.2136H8V14.7864Z\" fill=\"black\"/>\n</svg>\n\n\t\t\t\t\n\n\t</div>",
+      slidesToShow: 2
+    }
+  }, {
+    breakpoint: 667,
+    settings: {
+      slidesToShow: 1,
+      prevArrow: "<div class=\"keys_prev slick-prev\">\n\t\t\t\t<svg width=\"30\" height=\"30\" viewBox=\"0 0 30 30\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"15\" cy=\"15\" r=\"15\" fill=\"#FDF311\"/>\n<path d=\"M22 14.7864H10.9104L14.9346 11.0091L13.8596 10L8 15.5L13.8596 21L14.9346 19.9909L10.9104 16.2136H22V14.7864Z\" fill=\"black\"/>\n</svg>\n\n\t\t\t\t\n\t</div>",
+      nextArrow: "<div class=\"keys_prev slick-next\">\n\t\t\t\t<svg width=\"30\" height=\"30\" viewBox=\"0 0 30 30\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle r=\"15\" transform=\"matrix(-1 0 0 1 15 15)\" fill=\"#FDF311\"/>\n<path d=\"M8 14.7864H19.0896L15.0654 11.0091L16.1404 10L22 15.5L16.1404 21L15.0654 19.9909L19.0896 16.2136H8V14.7864Z\" fill=\"black\"/>\n</svg>\n\n\t\t\t\t\n\n\t</div>"
+    }
   }]
 });

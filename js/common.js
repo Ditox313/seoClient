@@ -1,80 +1,70 @@
-$(document).ready(function() {https://clck.ru/F5MdE
-   $('.menu_but').click(function()
-   {
-   	$('.nav_menu_list').slideToggle(350,function()
-   		{
-   			if($(this).css('display')==='none')
-				{
+$(document).ready(function () {
+	https: //clck.ru/F5MdE
+		$('.menu_but').click(function () {
+			$('.nav_menu_list').slideToggle(350, function () {
+				if ($(this).css('display') === 'none') {
 					$(this).removeAttr('style');
 				}
-   		});
-   })
+			});
+		})
 });
 
 
-$(document).ready(function() {
-    $(".fancybox").fancybox({
-    	    "imageScale"            : false,
-            "zoomOpacity"			: true,
-            "overlayShow"			: false,
-            "zoomSpeedIn"			: 500,
-            "zoomSpeedOut"			: 500
-    });
+$(document).ready(function () {
+	$(".fancybox").fancybox({
+		"imageScale": false,
+		"zoomOpacity": true,
+		"overlayShow": false,
+		"zoomSpeedIn": 500,
+		"zoomSpeedOut": 500
+	});
 });
 
 
-$(function()
-{
+$(function () {
 
 	var btnUp = $(".but_up");
 
 	var top = $(this).scrollTop();
-		if( top > 300 ){
-			btnUp.fadeIn(500);
-		}
-		else
-		{
-			btnUp.fadeOut(500);
-		}
+	if (top > 300) {
+		btnUp.fadeIn(500);
+	} else {
+		btnUp.fadeOut(500);
+	}
 
-		
-	$(document).on("scroll",function()
-	{
+
+	$(document).on("scroll", function () {
 		var top = $(this).scrollTop();
-		if( top > 300 ){
+		if (top > 300) {
 			btnUp.fadeIn(500);
-		}
-		else
-		{
+		} else {
 			btnUp.fadeOut(500);
 		}
 	});
 
-	btnUp.on("click",function()
-	{
+	btnUp.on("click", function () {
 		$("html,body").animate({
-			scrollTop:0
-		},400);
+			scrollTop: 0
+		}, 400);
 	});
 });
 
 
-$(".link").on("click",function(e)
-	{
-		e.preventDefault();
+$(".link").on("click", function (e) {
+	e.preventDefault();
 
-		var selector = $(this).attr("href"); //получили Атрибут
-		var h = $(selector);  //получили элемент с данным атрибутом
-		
-
-		$("html,body").animate({
-			scrollTop: h.offset().top //мы скролим тег body на высоту h.offset(высоту получаем при клике на элемент меню).top
-		},500);
-	});
+	var selector = $(this).attr("href"); //получили Атрибут
+	var h = $(selector); //получили элемент с данным атрибутом
 
 
-$(document).ready(function() {
-  new WOW().init();
+	$("html,body").animate({
+		scrollTop: h.offset().top //мы скролим тег body на высоту h.offset(высоту получаем при клике на элемент меню).top
+	}, 500);
+});
+
+
+$(document).ready(function () {
+	new WOW().init();
 });
 
 
@@ -85,14 +75,14 @@ const mobileMenu = document.querySelector('.mobile_menu');
 const openmenu = document.querySelectorAll('[data-openmenu]');
 const closemenu = document.querySelectorAll('[data-closemenu]');
 
-openmenu.forEach(function(item){
-	item.addEventListener('click', function(){
+openmenu.forEach(function (item) {
+	item.addEventListener('click', function () {
 		mobileMenu.style.transform = 'translateY(0)';
 	});
 });
 
-closemenu.forEach(function(item){
-	item.addEventListener('click', function(){
+closemenu.forEach(function (item) {
+	item.addEventListener('click', function () {
 		mobileMenu.style.transform = 'translateY(-101%)';
 	});
 });
@@ -125,14 +115,61 @@ $('.slider_keys').slick({
 	</svg>
 
 	</div>`,
-	responsive: [
-		{
-		  breakpoint: 1200,
-		  settings: {
-			slidesToShow: 2,
-			slidesToScroll: 1,
-		  }
+	responsive: [{
+			breakpoint: 1200,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1,
+			}
 		},
-		
-	  ]
-  });
+
+		{
+			breakpoint: 815,
+			settings: {
+				prevArrow: `<div class="keys_prev slick-prev">
+				<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="15" cy="15" r="15" fill="#FDF311"/>
+<path d="M22 14.7864H10.9104L14.9346 11.0091L13.8596 10L8 15.5L13.8596 21L14.9346 19.9909L10.9104 16.2136H22V14.7864Z" fill="black"/>
+</svg>
+
+				
+	</div>`,
+				nextArrow: `<div class="keys_prev slick-next">
+				<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle r="15" transform="matrix(-1 0 0 1 15 15)" fill="#FDF311"/>
+<path d="M8 14.7864H19.0896L15.0654 11.0091L16.1404 10L22 15.5L16.1404 21L15.0654 19.9909L19.0896 16.2136H8V14.7864Z" fill="black"/>
+</svg>
+
+				
+
+	</div>`,
+	slidesToShow: 2,
+			}
+		},
+
+		{
+			breakpoint: 667,
+			settings: {
+				slidesToShow: 1,
+				prevArrow: `<div class="keys_prev slick-prev">
+				<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="15" cy="15" r="15" fill="#FDF311"/>
+<path d="M22 14.7864H10.9104L14.9346 11.0091L13.8596 10L8 15.5L13.8596 21L14.9346 19.9909L10.9104 16.2136H22V14.7864Z" fill="black"/>
+</svg>
+
+				
+	</div>`,
+				nextArrow: `<div class="keys_prev slick-next">
+				<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle r="15" transform="matrix(-1 0 0 1 15 15)" fill="#FDF311"/>
+<path d="M8 14.7864H19.0896L15.0654 11.0091L16.1404 10L22 15.5L16.1404 21L15.0654 19.9909L19.0896 16.2136H8V14.7864Z" fill="black"/>
+</svg>
+
+				
+
+	</div>`,
+			}
+		},
+
+	]
+});
