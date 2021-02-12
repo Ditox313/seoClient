@@ -74,8 +74,7 @@ closemenu.forEach(function (item) {
   });
 }); // delete br
 
-var brs = document.querySelectorAll('.block_1 br');
-console.log(brs); // slick keys
+var brs = document.querySelectorAll('.block_1 br'); // slick keys
 
 $('.slider_keys').slick({
   slidesToShow: 3,
@@ -160,7 +159,51 @@ function clickMenu() {
 
 hideTabs();
 showTab();
-clickMenu(); // select
+clickMenu(); // mob tabs
+
+document.addEventListener('DOMContentLoaded', function () {
+  var tabs2 = document.querySelectorAll('.tab'),
+      menu_links2 = document.querySelectorAll('.select__item span'),
+      menu_parent2 = document.querySelector('.select__list'); // Скрываем все табы
+
+  function hideTabs2() {
+    tabs2.forEach(function (item) {
+      item.style.display = 'none';
+    });
+    menu_links2.forEach(function (item) {
+      item.classList.remove('tab__active');
+    });
+  } // Показываем таб
+
+
+  function showTab2() {
+    var i = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+    tabs2[i].style.display = 'block';
+    tabs2[i].classList.add('fade_anim');
+    menu_links2[i].classList.add('tab__active');
+  } // Делегируем событие на родителя меню
+
+
+  function clickMenu2() {
+    menu_parent2.addEventListener('click', function (e) {
+      var target2 = e.target;
+
+      if (target2 && target2.classList.contains('tabs_mob_trigger')) {
+        menu_links2.forEach(function (item, i) {
+          if (target2 == item) {
+            hideTabs2();
+            showTab2(i);
+            item.classList.add('tab__active');
+          }
+        });
+      }
+    });
+  }
+
+  hideTabs2();
+  showTab2();
+  clickMenu2();
+}); // select
 // Select
 
 $('.select').each(function () {
@@ -190,7 +233,8 @@ $('.select').each(function () {
     $('<li>', {
       "class": 'select__item',
       html: $('<span>', {
-        text: selectOption.eq(i).text()
+        text: selectOption.eq(i).text(),
+        "class": 'tabs_mob_trigger'
       })
     }).attr('data-value', selectOption.eq(i).val()).appendTo(selectList);
   } // Find all items
