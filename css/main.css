@@ -909,7 +909,7 @@ header.header_modile .mob_header_but .btn {
 .block_7 .block_7__list .slider_reviews__prev {
   position: absolute;
   left: 42%;
-  top: 106% !important;
+  top: 107% !important;
   z-index: 999999;
   cursor: pointer;
 }

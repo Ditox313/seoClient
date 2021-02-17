@@ -201,23 +201,20 @@ $('.slider_reviews').slick({
 		{
 			breakpoint: 815,
 			settings: {
-				prevArrow: `<div class="keys_prev slick-prev">
+				prevArrow: `<div class="slider_reviews__prev slider_reviews__prev__ar_2">
 				<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="15" cy="15" r="15" fill="#FDF311"/>
 <path d="M22 14.7864H10.9104L14.9346 11.0091L13.8596 10L8 15.5L13.8596 21L14.9346 19.9909L10.9104 16.2136H22V14.7864Z" fill="black"/>
 </svg>
-
-				
-	</div>`,
-				nextArrow: `<div class="keys_prev slick-next">
+								
+			</div>`,
+				nextArrow: `<div class="slider_reviews__next">
 				<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle r="15" transform="matrix(-1 0 0 1 15 15)" fill="#FDF311"/>
 <path d="M8 14.7864H19.0896L15.0654 11.0091L16.1404 10L22 15.5L16.1404 21L15.0654 19.9909L19.0896 16.2136H8V14.7864Z" fill="black"/>
 </svg>
-
-				
-
-	</div>`,
+								
+			</div>`,
 	slidesToShow: 2,
 			}
 		},
@@ -226,23 +223,20 @@ $('.slider_reviews').slick({
 			breakpoint: 667,
 			settings: {
 				slidesToShow: 1,
-				prevArrow: `<div class="keys_prev slick-prev">
+				prevArrow: `<div class="slider_reviews__prev slider_reviews__prev__ar_2">
 				<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="15" cy="15" r="15" fill="#FDF311"/>
 <path d="M22 14.7864H10.9104L14.9346 11.0091L13.8596 10L8 15.5L13.8596 21L14.9346 19.9909L10.9104 16.2136H22V14.7864Z" fill="black"/>
 </svg>
-
-				
-	</div>`,
-				nextArrow: `<div class="keys_prev slick-next">
+								
+			</div>`,
+				nextArrow: `<div class="slider_reviews__next">
 				<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle r="15" transform="matrix(-1 0 0 1 15 15)" fill="#FDF311"/>
 <path d="M8 14.7864H19.0896L15.0654 11.0091L16.1404 10L22 15.5L16.1404 21L15.0654 19.9909L19.0896 16.2136H8V14.7864Z" fill="black"/>
 </svg>
-
-				
-
-	</div>`,
+								
+			</div>`,
 			}
 		},
 
