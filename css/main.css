@@ -842,3 +842,93 @@ header.header_modile .mob_header_but .btn {
   color: #000;
   transition: all 0.3s;
 }
+.block_7 {
+  font-family: 'Arial', sans-serif;
+  padding: 86px 0px;
+}
+.block_7 .block_7__title {
+  margin-bottom: 30px;
+}
+.block_7 .block_7__subtitle {
+  width: 50%;
+  margin-bottom: 20px;
+}
+.block_7 .block_7__list {
+  margin-bottom: 30px;
+  position: relative;
+}
+.block_7 .block_7__list .block_7__list___item {
+  background-color: #01A089;
+  height: auto;
+  border-radius: 5px;
+  padding: 30px 20px;
+  width: 97% !important;
+}
+.block_7 .block_7__list .block_7__list___item .block_7__list___item___title {
+  margin-bottom: 20px;
+}
+.block_7 .block_7__list .block_7__list___item .block_7__list___item___title span {
+  width: 35%;
+  text-align: right;
+}
+.block_7 .block_7__list .block_7__list___item .block_7__list___item___title h3 {
+  width: 65%;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 26px;
+}
+.block_7 .block_7__list .block_7__list___item .block_7__list___item____content {
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.block_7 .block_7__list .block_7__list___item .block_7__list___item____meta {
+  margin-bottom: 20px;
+}
+.block_7 .block_7__list .block_7__list___item .block_7__list___item____meta span {
+  font-size: 14px;
+  color: #b9b9b9;
+}
+.block_7 .block_7__list .block_7__list___item .block_7__list___item____btn {
+  text-align: center;
+}
+.block_7 .block_7__list .block_7__list___item .block_7__list___item____btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fdf311;
+}
+.block_7 .block_7__list .block_7__list___item .block_7__list___item____btn a svg {
+  margin-left: 7px;
+}
+.block_7 .block_7__list .slider_reviews__prev {
+  position: absolute;
+  left: 42%;
+  top: 106% !important;
+  z-index: 999999;
+  cursor: pointer;
+}
+.block_7 .block_7__list .slider_reviews__next {
+  position: absolute;
+  right: 40.5%;
+  z-index: 999999;
+  top: 107% !important;
+  cursor: pointer;
+}
+.block_7 .slick-dots li button:before {
+  opacity: 0.75;
+  color: #000000;
+}
+.block_7 .slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: #01A089;
+}
+.block_7 .slick-dots {
+  position: absolute;
+  bottom: -40px;
+}

@@ -106,6 +106,37 @@ $('.slider_keys').slick({
       nextArrow: "<div class=\"keys_prev slick-next\">\n\t\t\t\t<svg width=\"30\" height=\"30\" viewBox=\"0 0 30 30\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle r=\"15\" transform=\"matrix(-1 0 0 1 15 15)\" fill=\"#FDF311\"/>\n<path d=\"M8 14.7864H19.0896L15.0654 11.0091L16.1404 10L22 15.5L16.1404 21L15.0654 19.9909L19.0896 16.2136H8V14.7864Z\" fill=\"black\"/>\n</svg>\n\n\t\t\t\t\n\n\t</div>"
     }
   }]
+});
+$('.slider_reviews').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  // autoplay: true,
+  autoplaySpeed: 2000,
+  arrows: true,
+  dots: true,
+  prevArrow: "<div class=\"slider_reviews__prev\">\n\t<svg width=\"18\" height=\"15\" viewBox=\"0 0 18 15\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n\t\t<path d=\"M18 6.52686H3.74194L8.91593 1.37602L7.53372 0L0 7.5L7.53372 15L8.91593 13.624L3.74194 8.47314H18V6.52686Z\" fill=\"#01A089\"/>\n\t</svg>\t\t\t\t\t\t\t\t\n</div>",
+  nextArrow: "<div class=\"slider_reviews__next\">\n\t<svg width=\"18\" height=\"15\" viewBox=\"0 0 18 15\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n\t\t<path d=\"M0 6.52686H14.2581L9.08407 1.37602L10.4663 0L18 7.5L10.4663 15L9.08407 13.624L14.2581 8.47314H0V6.52686Z\" fill=\"#01A089\"/>\n\t</svg>\t\t\t\t\t\t\t\t\n</div>",
+  responsive: [{
+    breakpoint: 1200,
+    settings: {
+      slidesToShow: 2,
+      slidesToScroll: 1
+    }
+  }, {
+    breakpoint: 815,
+    settings: {
+      prevArrow: "<div class=\"keys_prev slick-prev\">\n\t\t\t\t<svg width=\"30\" height=\"30\" viewBox=\"0 0 30 30\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"15\" cy=\"15\" r=\"15\" fill=\"#FDF311\"/>\n<path d=\"M22 14.7864H10.9104L14.9346 11.0091L13.8596 10L8 15.5L13.8596 21L14.9346 19.9909L10.9104 16.2136H22V14.7864Z\" fill=\"black\"/>\n</svg>\n\n\t\t\t\t\n\t</div>",
+      nextArrow: "<div class=\"keys_prev slick-next\">\n\t\t\t\t<svg width=\"30\" height=\"30\" viewBox=\"0 0 30 30\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle r=\"15\" transform=\"matrix(-1 0 0 1 15 15)\" fill=\"#FDF311\"/>\n<path d=\"M8 14.7864H19.0896L15.0654 11.0091L16.1404 10L22 15.5L16.1404 21L15.0654 19.9909L19.0896 16.2136H8V14.7864Z\" fill=\"black\"/>\n</svg>\n\n\t\t\t\t\n\n\t</div>",
+      slidesToShow: 2
+    }
+  }, {
+    breakpoint: 667,
+    settings: {
+      slidesToShow: 1,
+      prevArrow: "<div class=\"keys_prev slick-prev\">\n\t\t\t\t<svg width=\"30\" height=\"30\" viewBox=\"0 0 30 30\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"15\" cy=\"15\" r=\"15\" fill=\"#FDF311\"/>\n<path d=\"M22 14.7864H10.9104L14.9346 11.0091L13.8596 10L8 15.5L13.8596 21L14.9346 19.9909L10.9104 16.2136H22V14.7864Z\" fill=\"black\"/>\n</svg>\n\n\t\t\t\t\n\t</div>",
+      nextArrow: "<div class=\"keys_prev slick-next\">\n\t\t\t\t<svg width=\"30\" height=\"30\" viewBox=\"0 0 30 30\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle r=\"15\" transform=\"matrix(-1 0 0 1 15 15)\" fill=\"#FDF311\"/>\n<path d=\"M8 14.7864H19.0896L15.0654 11.0091L16.1404 10L22 15.5L16.1404 21L15.0654 19.9909L19.0896 16.2136H8V14.7864Z\" fill=\"black\"/>\n</svg>\n\n\t\t\t\t\n\n\t</div>"
+    }
+  }]
 }); // Questions
 
 $('.quests_block').on('click', function () {
