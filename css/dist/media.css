@@ -303,6 +303,11 @@
     {
         display: none;
     }
+
+    .block_8_plan .block_8__title h2 {
+        font-size: 38px;
+        margin-bottom: 23px;
+    }
 }
 
 @media screen and (max-width: 890px)
@@ -642,7 +647,7 @@
     }
 
 
-
+    
     
 
     
@@ -706,6 +711,11 @@
     .tab_uslugi_toggle_mob
     {
         display: none;
+    }
+
+    .block_8_plan .block_8__content
+    {
+        background: none !important;
     }
 
     
@@ -819,6 +829,16 @@
 
     .block_6 .block_6_subtitle h3 {
         width: 100%;
+    }
+
+    .block_8_plan .block_8__title h2 {
+        font-size: 30px;
+        margin-bottom: 23px;
+    }
+
+    .block_8_plan .block_8__title h3 {
+        font-size: 14px;
+        line-height: 22px;
     }
 }
 
