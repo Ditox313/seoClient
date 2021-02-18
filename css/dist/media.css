@@ -553,6 +553,14 @@
         bottom: -52px;
     }
 
+    .block_10 .block_10_row a {
+        padding: 10px 40px;
+        border-radius: 20px;
+        border: 3px solid #01A089;
+        font-size: 13px;
+        margin-bottom: 30px;
+    }
+
     
 }
 

@@ -176,7 +176,7 @@ $('.slider_keys').slick({
 $('.slider_reviews').slick({
 	slidesToShow: 3,
 	slidesToScroll: 1,
-	// autoplay: true,
+	autoplay: true,
 	autoplaySpeed: 2000,
 	arrows: true,
 	dots: true,
