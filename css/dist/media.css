@@ -318,6 +318,30 @@
         cursor: pointer;
         font-size: 15px;
     }
+
+    .block_9 .block_7__list .slider_reviews__next {
+        position: absolute;
+        right: 33.5%;
+        z-index: 999999;
+        top: 107% !important;
+        cursor: pointer;
+    }
+
+    .block_9 .block_7__list .slider_reviews__next {
+        position: absolute;
+        right: 33.5%;
+        z-index: 999999;
+        top: 107% !important;
+        cursor: pointer;
+    }
+
+    .block_9 .block_7__list .slider_reviews__prev {
+        position: absolute;
+        left: 37%;
+        top: 107% !important;
+        z-index: 999999;
+        cursor: pointer;
+    }
 }
 
 @media screen and (max-width: 890px)
@@ -524,6 +548,11 @@
         margin-bottom: 20px;
     }
 
+    .block_9 .slick-dots {
+        position: absolute;
+        bottom: -52px;
+    }
+
     
 }
 
@@ -658,7 +687,77 @@
 
 
     
-    
+    .block_9 .slick-dots {
+        position: absolute;
+        bottom: -52px;
+    }
+
+    .block_9 .block_7__list .slider_reviews__prev {
+        position: absolute;
+        left: 30%;
+        top: 107% !important;
+        z-index: 999999;
+        cursor: pointer;
+    }
+
+    .block_9 .block_7__list .slider_reviews__next {
+        position: absolute;
+        right: 24.5%;
+        z-index: 999999;
+        top: 107% !important;
+        cursor: pointer;
+    }
+
+    .block_9 .block_7__list .block_7__list___item .block_9__list___item____title h3 {
+        min-height: 76px;
+        font-size: 16px;
+        line-height: 26px;
+        color: #fff;
+        margin-bottom: 15px;
+    }
+
+    .block_9 .block_7__list .block_7__list___item .block_9__list___item____content img
+    {
+        margin: 0 auto;
+    }
+
+    .block_9__title h2
+    {
+        font-size: 28px;
+    }
+    .block_9 .slick-dots {
+        position: absolute;
+        bottom: -52px;
+        left: -12px;
+    }
+
+    .block_7 .slick-dots {
+        position: absolute;
+        bottom: -58px;
+        left: -9px;
+    }
+
+    .block_9 .block_7__list .slider_reviews__next {
+        position: absolute;
+        right: 27.5%;
+        z-index: 999999;
+        top: 107% !important;
+        cursor: pointer;
+    }
+
+    .block_7 .block_7__list .slider_reviews__prev {
+        position: absolute;
+        left: 29%;
+        top: 107% !important;
+        z-index: 999999;
+        cursor: pointer;
+    }
+
+    .block_7 .slick-dots {
+        position: absolute;
+        bottom: -58px;
+        left: -18px;
+    }
 
     
 
@@ -747,6 +846,15 @@
     .header_modile
     {
         display: block !important;
+    }
+}
+
+@media screen and (max-width: 667px)
+{
+    .block_7 .slick-dots {
+        position: absolute;
+        bottom: -47px;
+        left: -18px;
     }
 }
 
@@ -849,6 +957,53 @@
     .block_8_plan .block_8__title h3 {
         font-size: 14px;
         line-height: 22px;
+    }
+
+    .block_9 .block_9__subtitle
+    {
+        font-size: 14px;
+    }
+
+    .block_9 .block_7__list .slider_reviews__next {
+        position: absolute;
+        right: 10.5%;
+        z-index: 999999;
+        top: 107% !important;
+        cursor: pointer;
+    }
+
+    .block_9 .block_7__list .slider_reviews__prev {
+        position: absolute;
+        left: 9%;
+        top: 107% !important;
+        z-index: 999999;
+        cursor: pointer;
+    }
+
+    .block_9 .slick-dots {
+        position: absolute;
+        bottom: -52px;
+        left: -12px;
+    }
+
+    .block_9 .block_9__subtitle h3 {
+        width: 100%;
+    }
+
+    .block_7 .block_7__list .slider_reviews__next {
+        position: absolute;
+        right: 17.5%;
+        z-index: 999999;
+        top: 107% !important;
+        cursor: pointer;
+    }
+
+    .block_7 .block_7__list .slider_reviews__prev {
+        position: absolute;
+        left: 17%;
+        top: 107% !important;
+        z-index: 999999;
+        cursor: pointer;
     }
 }
 
@@ -1037,18 +1192,41 @@
     }
 
 
+
+
+    .block_9 .block_7__list .block_7__list___item .block_9__list___item____content .seo_link {
+        position: absolute;
+        padding: 18px 50px;
+        top: 0;
+        border-radius: 5px;
+        font-weight: 400;
+        color: #000;
+        background-color: #FDF311;
+        left: 42%;
+        margin-left: -22%;
+        top: 50%;
+        margin-top: -7%;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+
+    .block_7 .slick-dots {
+        position: absolute;
+        bottom: -51px;
+        left: -18px;
+    }
+
     .block_7 .block_7__list .slider_reviews__prev {
         position: absolute;
-        left: 35%;
+        left: 6%;
         top: 107% !important;
         z-index: 999999;
         cursor: pointer;
     }
 
-
     .block_7 .block_7__list .slider_reviews__next {
         position: absolute;
-        right: 37.5%;
+        right: 10.5%;
         z-index: 999999;
         top: 107% !important;
         cursor: pointer;
