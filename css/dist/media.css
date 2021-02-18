@@ -767,6 +767,8 @@
         left: -18px;
     }
 
+   
+
     
 
    
@@ -833,6 +835,16 @@
     .block_8_plan .block_8__content
     {
         background: none !important;
+    }
+
+    .block_10_desc
+    {
+        display: none;
+    }
+
+    .block_10_mob
+    {
+        display: block;
     }
 
     
@@ -1013,6 +1025,7 @@
         z-index: 999999;
         cursor: pointer;
     }
+
 }
 
 @media screen and (max-width: 448px)
@@ -1154,6 +1167,22 @@
         color: #b9b9b9;
     }
 
+    
+    .block_10_mob .block_10_row a {
+        padding: 10px 20px;
+        border-radius: 20px;
+        border: 3px solid #01A089;
+        font-size: 13px;
+        margin-bottom: 30px;
+    }
+
+    .block_10_mob .block_10_row a {
+        padding: 10px 7px;
+        border-radius: 20px;
+        border: 3px solid #01A089;
+        font-size: 13px;
+        margin-bottom: 30px;
+    }
     
 
 }

@@ -243,7 +243,12 @@ document.addEventListener('DOMContentLoaded', function () {
     $('input,textarea').blur(function () {
       $(this).attr('placeholder', $(this).data('placeholder'));
     });
-  });
+  }); // const container = document.querySelector('.block_10_row_mob');
+  // let msnry = new Masonry( container, {
+  // // Настройки
+  // columnWidth: 200,
+  // itemSelector: '.block_10_link'
+  // });
 }); // select
 // Select
 

@@ -392,6 +392,14 @@ const tabs = document.querySelectorAll('.tab'),
 		});
 		});
 
+
+		// const container = document.querySelector('.block_10_row_mob');
+		// let msnry = new Masonry( container, {
+		// // Настройки
+		// columnWidth: 200,
+		// itemSelector: '.block_10_link'
+		// });
+
 	  
 	});
 	

@@ -101,6 +101,9 @@ body {
 .dn {
   display: none;
 }
+.fww {
+  flex-wrap: wrap;
+}
 ul {
   padding-left: 0;
 }
@@ -1203,62 +1206,88 @@ header.header_modile .mob_header_but .btn {
 }
 .block_10 .block_10_row .block_10_link_1 {
   transform: rotate(-12deg);
+  font-size: 16px;
 }
 .block_10 .block_10_row .block_10_link_2 {
   transform: rotate(2deg);
   margin-right: 50px;
+  font-size: 12px;
 }
 .block_10 .block_10_row .block_10_link_3 {
   transform: rotate(-18.54deg);
   margin-left: 100px;
+  font-size: 15px;
 }
 .block_10 .block_10_row .block_10_link_4 {
   transform: rotate(-5.11deg);
   margin-right: 150px;
+  font-size: 13px;
 }
 .block_10 .block_10_row .block_10_link_5 {
   transform: rotate(-9.35deg);
   margin-left: 100px;
   margin-bottom: 30px;
+  font-size: 16px;
 }
 .block_10 .block_10_row .block_10_link_6 {
   transform: rotate(-27.24deg);
   margin-right: 150px;
   margin-bottom: 30px;
+  font-size: 16px;
 }
 .block_10 .block_10_row .block_10_link_7 {
   transform: rotate(-9.21deg);
   margin-left: 100px;
   margin-bottom: 30px;
+  font-size: 12px;
 }
 .block_10 .block_10_row .block_10_link_8 {
   transform: rotate(-24.3deg);
   margin-right: 150px;
   margin-bottom: 30px;
+  font-size: 15px;
 }
 .block_10 .block_10_row .block_10_link_9 {
   transform: rotate(16.36deg);
   margin-left: 100px;
   margin-bottom: 30px;
+  font-size: 13px;
 }
 .block_10 .block_10_row .block_10_link_10 {
   transform: rotate(-23.34deg);
   margin-right: 150px;
   margin-bottom: 30px;
+  font-size: 14px;
 }
 .block_10 .block_10_row .block_10_link_11 {
   transform: rotate(13.69deg);
   margin-left: 100px;
+  font-size: 12px;
 }
 .block_10 .block_10_row .block_10_link_12 {
   transform: rotate(-21.93deg);
   margin-right: 150px;
+  font-size: 16px;
 }
 .block_10 .block_10_row .block_10_link_13 {
   transform: rotate(2.4deg);
   margin-left: 2px;
+  font-size: 12px;
 }
 .block_10 .block_10_row .block_10_link_14 {
   transform: rotate(-24.2deg);
   margin-right: 50px;
+  font-size: 16px;
+}
+.block_10_mob {
+  display: none;
+  height: auto;
+}
+.block_10_mob .block_10_row a {
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: 3px solid #01A089;
+  font-size: 16px;
+  margin-bottom: 30px;
+  display: inline-block;
 }
