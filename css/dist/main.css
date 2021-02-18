@@ -1,4 +1,10 @@
 /*Спецификации*/
+.but_up {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+}
 .clearfix:after {
   content: " ";
   display: table;
@@ -1296,6 +1302,7 @@ footer {
   margin-top: 60px;
   padding: 50px 40px;
   font-family: 'Arial', sans-serif;
+  overflow: hidden;
 }
 footer .footer_content {
   padding-bottom: 43px;
@@ -1407,4 +1414,5 @@ footer footer.footer_main__mob .footer_but {
 }
 .footer_main__mob {
   display: none;
+  overflow: hidden;
 }
