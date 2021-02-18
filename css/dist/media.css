@@ -293,6 +293,16 @@
         z-index: 999999;
         cursor: pointer;
     }
+
+    .block_8_plan
+    {
+        display: block !important;
+    }
+
+    .block_8_desc
+    {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 890px)
