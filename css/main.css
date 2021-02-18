@@ -1275,7 +1275,7 @@ header.header_modile .mob_header_but .btn {
   font-size: 12px;
 }
 .block_10 .block_10_row .block_10_link_14 {
-  transform: rotate(-24.2deg);
+  transform: rotate(-10.2deg);
   margin-right: 50px;
   font-size: 16px;
 }
@@ -1290,4 +1290,121 @@ header.header_modile .mob_header_but .btn {
   font-size: 16px;
   margin-bottom: 30px;
   display: inline-block;
+}
+footer {
+  background-color: #01A089;
+  margin-top: 60px;
+  padding: 50px 40px;
+  font-family: 'Arial', sans-serif;
+}
+footer .footer_content {
+  padding-bottom: 43px;
+  position: relative;
+}
+footer .footer_content .footer_item .footer_logo {
+  margin-bottom: 20px;
+}
+footer .footer_content .footer_item .footer_logo span {
+  font-size: 22px;
+  line-height: 18px;
+  color: #fff;
+  margin-left: 2px;
+  margin-top: -2px !important;
+}
+footer .footer_content .footer_item .col_1_text p {
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+footer .footer_content .footer_item .footer_menu__title h4 {
+  font-size: 20px;
+  line-height: 26px;
+  color: #fff;
+}
+footer .footer_content .footer_item ul {
+  margin-top: 5px;
+}
+footer .footer_content .footer_item ul li {
+  margin-bottom: 10px;
+}
+footer .footer_content .footer_item ul li a {
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+}
+footer .footer_content .footer_item .footer_item_sityes___title {
+  margin-bottom: 15px;
+  font-size: 20px;
+  line-height: 26px;
+  color: #fff;
+}
+footer .footer_content .footer_item .footer_item__contacts___title h4 {
+  font-size: 20px;
+  line-height: 26px;
+  color: #fff;
+  margin-bottom: 33px;
+}
+footer .footer_content .footer_item .footer_item___content___contacts div {
+  margin-bottom: 17px;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+}
+footer .footer_content .footer_item .footer_item___content___contacts div svg {
+  margin-right: 5px;
+}
+footer .footer_content .footer_item__sityes ul {
+  margin-bottom: 10px;
+}
+footer .footer_content .footer_item__sityes ul li a {
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+}
+footer .footer_content::after {
+  content: '';
+  display: block;
+  width: 300%;
+  height: 1px;
+  background-color: #00BDA2;
+  position: absolute;
+  left: -100%;
+  bottom: 20px;
+}
+footer .footer_copy {
+  text-align: center;
+  padding-top: 13px;
+}
+footer .footer_copy span {
+  font-size: 15px;
+  line-height: 19px;
+  font-weight: 300;
+  color: #fff;
+}
+footer .footer_copy_mob {
+  display: none;
+  color: #fff;
+}
+footer .footer_copy_mob p {
+  margin-bottom: 7px;
+}
+footer .footer_but {
+  display: inline-block;
+  padding: 12px 15px;
+  border: 2px solid #FDF311;
+  border-radius: 5px;
+  color: #fff;
+}
+footer footer.footer_main__mob .footer_but {
+  display: inline-block;
+  padding: 12px 40px;
+  border: 2px solid #FDF311;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 15px;
+}
+.footer_main__mob {
+  display: none;
 }
