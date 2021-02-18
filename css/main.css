@@ -228,6 +228,9 @@ p {
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
 }
+input#check:checked + .check_fake::before {
+  opacity: 1;
+}
 /*------------------------------------------------------------------------*/
 header {
   height: 713px;
@@ -977,11 +980,31 @@ header.header_modile .mob_header_but .btn {
 .block_8_desc .block_8__content___item .block_8__content___item___form .block_8__content___item___form____item .acceptance label {
   display: flex;
 }
+.block_8_desc .block_8__content___item .block_8__content___item___form .block_8__content___item___form____item .acceptance label input {
+  display: none;
+}
 .block_8_desc .block_8__content___item .block_8__content___item___form .block_8__content___item___form____item .acceptance label div {
   margin-left: 8px;
 }
 .block_8_desc .block_8__content___item .block_8__content___item___form .block_8__content___item___form____item .acceptance label a {
   color: #01A089;
+}
+.block_8_desc .block_8__content___item .block_8__content___item___form .block_8__content___item___form____item .acceptance label span {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  background-color: #01A089;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.block_8_desc .block_8__content___item .block_8__content___item___form .block_8__content___item___form____item .acceptance label span::before {
+  position: absolute;
+  content: '✓';
+  left: 4px;
+  top: -2px;
+  font-weight: 600;
+  color: #fff;
+  opacity: 0;
 }
 .block_8_desc .block_8__content___item .block_8__content___item___form .block_8__content___item___form____item button {
   background-color: #00A78E;
@@ -1055,6 +1078,23 @@ header.header_modile .mob_header_but .btn {
 }
 .block_8_plan .block_8__content___item___form .block_8__content___item___form____item .acceptance label a {
   color: #01A089;
+}
+.block_8_plan .block_8__content___item___form .block_8__content___item___form____item .acceptance label span {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  background-color: #01A089;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.block_8_plan .block_8__content___item___form .block_8__content___item___form____item .acceptance label span::before {
+  position: absolute;
+  content: '✓';
+  left: 4px;
+  top: -2px;
+  font-weight: 600;
+  color: #fff;
+  opacity: 0;
 }
 .block_8_plan .block_8__content___item___form .block_8__content___item___form____item button {
   background-color: #00A78E;

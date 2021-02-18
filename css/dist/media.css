@@ -308,6 +308,16 @@
         font-size: 38px;
         margin-bottom: 23px;
     }
+
+    .block_8_plan .block_8__content___item .block_8__content___item___form .block_8__content___item___form____item .acceptance label span {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        background-color: #01A089;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 890px)

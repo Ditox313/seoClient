@@ -306,6 +306,12 @@ p
 	     -o-transform: rotate(180deg);
 	        transform: rotate(180deg);
 }
+
+
+input#check:checked + .check_fake::before
+{
+	opacity: 1;
+}
 /*------------------------------------------------------------------------*/
 
 
@@ -1509,6 +1515,11 @@ header.header_modile
 					{
 						display: flex;
 
+						input
+						{
+							display: none;
+							
+						}
 						div
 						{
 							margin-left: 8px;
@@ -1517,6 +1528,27 @@ header.header_modile
 						a
 						{
 							color: #01A089;
+						}
+
+						span
+						{
+							width: 20px;
+							height: 20px;
+							position: relative;
+							background-color: #01A089;
+							border-radius: 5px;
+							cursor: pointer;
+
+							&::before
+							{
+								position: absolute;
+								content: '✓';
+								left: 4px;
+								top: -2px;
+								font-weight: 600;
+								color: #fff;
+								opacity: 0;
+							}
 						}
 					}
 				}
@@ -1641,6 +1673,27 @@ header.header_modile
 					{
 						color: #01A089;
 					}
+
+					span
+						{
+							width: 20px;
+							height: 20px;
+							position: relative;
+							background-color: #01A089;
+							border-radius: 5px;
+							cursor: pointer;
+
+							&::before
+							{
+								position: absolute;
+								content: '✓';
+								left: 4px;
+								top: -2px;
+								font-weight: 600;
+								color: #fff;
+								opacity: 0;
+							}
+						}
 				}
 			}
 
